@@ -10,10 +10,12 @@
 		9EB3C97322A983ED009F4A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C97222A983ED009F4A91 /* AppDelegate.swift */; };
 		9EB3C97522A983ED009F4A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C97422A983ED009F4A91 /* ViewController.swift */; };
 		9EB3C97822A983ED009F4A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3C97622A983ED009F4A91 /* Main.storyboard */; };
-		9EB3C97B22A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C97922A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodeld */; };
 		9EB3C97D22A983EF009F4A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3C97C22A983EF009F4A91 /* Assets.xcassets */; };
 		9EB3C98022A983EF009F4A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3C97E22A983EF009F4A91 /* LaunchScreen.storyboard */; };
 		9EB3C98B22A983EF009F4A91 /* Tilak_Neva_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C98A22A983EF009F4A91 /* Tilak_Neva_AssignmentTests.swift */; };
+		9EB3C99822A99044009F4A91 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C99722A99044009F4A91 /* ProfileCell.swift */; };
+		9EB3C99A22A99AE3009F4A91 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C99922A99AE3009F4A91 /* APIHandler.swift */; };
+		9EB3C99C22A99C2D009F4A91 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3C99B22A99C2D009F4A91 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		9EB3C97222A983ED009F4A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EB3C97422A983ED009F4A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9EB3C97722A983ED009F4A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9EB3C97A22A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tilak_Neva_Assignment.xcdatamodel; sourceTree = "<group>"; };
 		9EB3C97C22A983EF009F4A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EB3C97F22A983EF009F4A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EB3C98122A983EF009F4A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB3C98622A983EF009F4A91 /* Tilak_Neva_AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tilak_Neva_AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB3C98A22A983EF009F4A91 /* Tilak_Neva_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tilak_Neva_AssignmentTests.swift; sourceTree = "<group>"; };
 		9EB3C98C22A983EF009F4A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB3C99722A99044009F4A91 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		9EB3C99922A99AE3009F4A91 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		9EB3C99B22A99C2D009F4A91 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,12 @@
 		9EB3C97122A983ED009F4A91 /* Tilak_Neva_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				9EB3C97222A983ED009F4A91 /* AppDelegate.swift */,
-				9EB3C97422A983ED009F4A91 /* ViewController.swift */,
-				9EB3C97622A983ED009F4A91 /* Main.storyboard */,
+				9EBF2CC022B31E4C002EFD78 /* SupportingFiles */,
+				9EB3C9A022A9CED4009F4A91 /* APIManager */,
 				9EB3C97C22A983EF009F4A91 /* Assets.xcassets */,
-				9EB3C97E22A983EF009F4A91 /* LaunchScreen.storyboard */,
-				9EB3C98122A983EF009F4A91 /* Info.plist */,
-				9EB3C97922A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodeld */,
+				9EB3C99D22A9CEAE009F4A91 /* Controller */,
+				9EB3C99F22A9CECC009F4A91 /* Model */,
+				9EB3C99E22A9CEBE009F4A91 /* View */,
 			);
 			path = Tilak_Neva_Assignment;
 			sourceTree = "<group>";
@@ -97,6 +100,49 @@
 				9EB3C98C22A983EF009F4A91 /* Info.plist */,
 			);
 			path = Tilak_Neva_AssignmentTests;
+			sourceTree = "<group>";
+		};
+		9EB3C99D22A9CEAE009F4A91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3C97422A983ED009F4A91 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EB3C99E22A9CEBE009F4A91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3C99722A99044009F4A91 /* ProfileCell.swift */,
+				9EB3C97622A983ED009F4A91 /* Main.storyboard */,
+				9EB3C97E22A983EF009F4A91 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EB3C99F22A9CECC009F4A91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3C99B22A99C2D009F4A91 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EB3C9A022A9CED4009F4A91 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3C99922A99AE3009F4A91 /* APIHandler.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		9EBF2CC022B31E4C002EFD78 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3C97222A983ED009F4A91 /* AppDelegate.swift */,
+				9EB3C98122A983EF009F4A91 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EB3C97522A983ED009F4A91 /* ViewController.swift in Sources */,
+				9EB3C99C22A99C2D009F4A91 /* Profile.swift in Sources */,
+				9EB3C99822A99044009F4A91 /* ProfileCell.swift in Sources */,
+				9EB3C99A22A99AE3009F4A91 /* APIHandler.swift in Sources */,
 				9EB3C97322A983ED009F4A91 /* AppDelegate.swift in Sources */,
-				9EB3C97B22A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +414,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FV6AA58LYL;
-				INFOPLIST_FILE = Tilak_Neva_Assignment/Info.plist;
+				INFOPLIST_FILE = Tilak_Neva_Assignment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tilak.Tilak-Neva-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,7 +433,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FV6AA58LYL;
-				INFOPLIST_FILE = Tilak_Neva_Assignment/Info.plist;
+				INFOPLIST_FILE = Tilak_Neva_Assignment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tilak.Tilak-Neva-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -469,19 +519,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9EB3C97922A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9EB3C97A22A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodel */,
-			);
-			currentVersion = 9EB3C97A22A983ED009F4A91 /* Tilak_Neva_Assignment.xcdatamodel */;
-			path = Tilak_Neva_Assignment.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9EB3C96722A983ED009F4A91 /* Project object */;
 }
