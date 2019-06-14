@@ -60,10 +60,16 @@ class ProfileCell: UITableViewCell {
         // to load the image without being repeated
         let currentGeneration = generation
         
-        APIHandler.sharedInstance.loadImage(from: imageUrl) { (image) in
-            guard currentGeneration == self.generation else { return }
-            self.profile_img.image = image
+//        APIHandler.sharedInstance.loadImage(from: imageUrl) { (image) in
+//        }
+
+        APIHandler.sharedInstance.loadImage(from: imageUrl) { (image, error) in
+            if error == nil && image != nil{
+                guard currentGeneration == self.generation else { return }
+                self.profile_img.image = image
+            }
             self.activityIndicator.stopAnimating()
+
         }
         
     }

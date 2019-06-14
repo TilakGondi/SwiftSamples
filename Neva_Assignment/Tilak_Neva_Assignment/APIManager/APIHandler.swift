@@ -36,14 +36,18 @@ class APIHandler: NSObject {
     }
     
     
-    func loadImage(from url:URL, completion: @escaping (UIImage) -> Void){
-        let task = session.dataTask(with: url) { (imageData, _, _) in
+    func loadImage(from url:URL, completion: @escaping (_ image:UIImage?, _ error:Error?) -> Void){
+        
+            let task = session.dataTask(with: url) { (imageData, _, error) in
             
             guard let imageData = imageData, let image = UIImage(data: imageData) else {
+                DispatchQueue.main.async {
+                    completion(nil,nil)
+                }
                 return
             }
             DispatchQueue.main.async {
-                completion(image)
+                completion(image,nil)
             }
         }
         task.resume()

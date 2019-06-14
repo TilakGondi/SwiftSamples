@@ -57,12 +57,20 @@ class Tilak_Neva_AssignmentTests: XCTestCase {
         guard let profileList = profilesList else {
             return
         }
+        let profile = profileList[0]
         
-        let profile = profileList[2]
-        let imageUrl = URL(string: profile.image!)
-        APIHandler.sharedInstance.loadImage(from: imageUrl!) { (image) in
-            
+        let imageExpectation = self.expectation(description: "ProfileImage")
+        var imageValue:UIImage?
+        if let imageUrl = URL(string: profile.image!) {
+            APIHandler.sharedInstance.loadImage(from: imageUrl) { (image, error) in
+                imageValue = image
+                imageExpectation.fulfill()
+            }
         }
+
+        wait(for: [imageExpectation], timeout: 10)
+        
+        XCTAssertNil(imageValue)
     }
 
 }
